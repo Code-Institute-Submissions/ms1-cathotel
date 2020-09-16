@@ -81,4 +81,8 @@
     .divider {
         display: block;
     }
+
+    .logo > img {
+        padding: 3vh 0;
+    }
 }
