@@ -38,7 +38,8 @@
 }
 
 .logo > img {
-    max-width: 12vw;
+    width: 140px;
+    padding: 1vh 0;
 }
 
 #about-images img {
