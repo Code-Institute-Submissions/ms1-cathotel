@@ -29,7 +29,7 @@
     padding: 20px;
 }
 
-.booking-newspaper-divide {
+.divider {
     display: none;
 }
 
@@ -77,7 +77,7 @@
         padding-bottom: 0;
       }
 
-    .booking-newspaper-divide {
+    .divider {
         display: block;
     }
 }
