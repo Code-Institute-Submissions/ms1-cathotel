@@ -33,17 +33,21 @@
     display: none;
 }
 
-#newspaper-logos {
+.logo-grid {
     text-align: center;
 }
 
-.newspaper-img > .img-fluid {
-    max-width: 14vw;
+.logo > img {
+    max-width: 12vw;
 }
 
 #about-images img {
     width: 100%;
     padding: 2px;
+}
+
+#about-text {
+    font-size: 1.3vw;
 }
 
 .image-hover:hover {
