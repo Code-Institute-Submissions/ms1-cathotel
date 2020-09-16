@@ -66,6 +66,8 @@
 
     #nav-fluid {
         background-color: rgb(80, 80, 80);
+        position: fixed;
+        z-index: 1;
     }
 
     #booking-fluid {
