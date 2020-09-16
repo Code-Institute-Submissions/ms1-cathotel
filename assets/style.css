@@ -27,6 +27,20 @@
     height: auto;
 }
 
+#newspapers {
+    padding: 8vh 0;
+    box-shadow: black;
+    border-radius: 20%;
+}
+
+#newspaper-logos {
+    text-align: center;
+}
+
+.newspaper-img > .img-fluid {
+    max-width: 14vw;
+}
+
 
 @media only screen and (max-width : 768px) {
     #nav-fluid {
