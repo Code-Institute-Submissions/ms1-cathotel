@@ -26,6 +26,11 @@
     height: auto;
     background-color: white;
     box-shadow: 3px 10px 19px -9px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+.booking-newspaper-divide {
+    display: none;
 }
 
 #newspaper-logos {
@@ -38,6 +43,13 @@
 
 
 @media only screen and (max-width : 768px) {
+    #bg-full {
+        height: 50vh;
+        position: relative;
+        margin-top: 7.5vh;
+        /* This margin-top is temporary, try to find a better way */
+    }
+
     #nav-fluid {
         background-color: rgb(80, 80, 80);
     }
@@ -49,13 +61,10 @@
         left: 0px;
         width: 100vw;
         box-shadow: none;
+        padding-bottom: 0;
       }
 
-
-    #bg-full {
-        height: 50vh;
-        position: relative;
-        margin-top: 7.5vh;
-        /* This margin-top is temporary, try to find a better way */
+    .booking-newspaper-divide {
+        display: block;
     }
 }
