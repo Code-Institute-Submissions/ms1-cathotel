@@ -41,6 +41,19 @@
     max-width: 14vw;
 }
 
+#about {
+    
+}
+
+#about-images img {
+    width: 100%;
+    padding: 2px;
+}
+
+.image-hover:hover {
+    filter: opacity(50%);
+}
+
 
 @media only screen and (max-width : 768px) {
     #bg-full {
