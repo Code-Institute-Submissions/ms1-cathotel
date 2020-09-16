@@ -6,10 +6,17 @@
 }
 
 #nav-fluid {
-    position: absolute;
+    position: fixed;
+    /* this was originally absolute, check if it works when more content is added */
     top: 0px;
 }
 
 #nav-fluid .navbar-brand {
     font-size: 1.5em;
+}
+
+@media only screen and (max-width : 768px) {
+    #nav-fluid {
+        background-color: rgb(80, 80, 80);
+    }
 }
