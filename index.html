@@ -15,6 +15,7 @@
 <body>
     <section id="banner">
         <div id="bg-full"></div>
+        <!-- START OF NAV BAR -->
         <div id="nav-fluid" class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container-fluid">
@@ -32,6 +33,25 @@
                     </div>
                 </div>
             </nav>
+        </div>
+        <!-- START OF BOOKING CONTAINER -->
+        <div class="container-fluid bg-white text-black rounded-lg shadow p-4" id="booking-fluid">
+            <div class="px-2 h4" id="booking-header">
+                Book A Stay With Us
+            </div>
+            <div class="mb-3 px-2" id="booking-subheader">
+                We are a 5-star registered cattery based in South West England, close to the A303 for easy access.
+            </div>
+            <form>
+                <div class="form-group d-inline-flex flex-wrap" id="booking-form">   
+                    <div class="order-1 px-2"><input type="text" class="form-control mb-2" placeholder="Full Name"></div>
+                    <div class="order-2 px-2"><input type="email" class="form-control mb-2" aria-describedby="emailHelp" placeholder="Email Address"></div>
+                    <div class="order-3 px-2"><input type="text" class="form-control mb-2" placeholder="Cat's Name"></div>
+                    <div class="order-4 px-2"><input type="text" class="form-control mb-2" placeholder="Phone Number"></div>
+                    <div class="order-5 px-2"><input type="number" class="form-control mb-2" placeholder="No. of nights"></div>
+                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary ">Submit</button></div>
+                </div>
+            </form>
         </div>
     </section>
 </body>
