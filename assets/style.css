@@ -31,6 +31,13 @@
 
 .divider {
     display: none;
+    margin: 0;
+}
+
+#testimonial {
+    background-color: rgb(247, 247, 247);
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
 .logo-grid {
@@ -52,7 +59,7 @@
 }
 
 .image-hover:hover {
-    filter: opacity(50%);
+    opacity: 0.5;
 }
 
 .carousel-item img {
