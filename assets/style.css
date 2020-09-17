@@ -55,6 +55,10 @@
     filter: opacity(50%);
 }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
 
 @media only screen and (max-width : 768px) {
     #bg-full {
@@ -86,5 +90,13 @@
 
     .logo > img {
         padding: 3vh 0;
+    }
+
+    #about-text {
+        font-size: 2vh;
+    }
+
+    #about-content {
+        padding: 10px;
     }
 }
