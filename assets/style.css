@@ -62,6 +62,10 @@
     opacity: 0.5;
 }
 
+.image-hover {
+    transition: opacity 0.3s;
+}
+
 .carousel-item img {
     width: 100%;
     height: auto;
