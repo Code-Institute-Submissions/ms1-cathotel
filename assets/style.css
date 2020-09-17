@@ -40,6 +40,14 @@
     margin-bottom: 20px;
 }
 
+#testimonial a {
+    color: gray;
+}
+
+#testimonial em {
+    font-size: 0.8em;
+}
+
 .logo-grid {
     text-align: center;
 }
