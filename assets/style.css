@@ -81,8 +81,10 @@
 }
 
 .gallery-image {
-    width: 23vw;
+    /* width: 23vw; */
+    width: auto;
     height: 23vw;
+    padding: 0.5em;
 }
 
 .square-photo {
@@ -91,9 +93,9 @@
     object-fit: cover;
 }
 
-#gallery [class*='col-'] {
+/* #gallery [class*='col-'] {
     padding: 1vw;
-}
+} */
 
 @media only screen and (max-width : 768px) {
     #bg-full {
