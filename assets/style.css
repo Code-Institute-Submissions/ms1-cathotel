@@ -22,6 +22,19 @@ html {
     font-size: 1.5em;
 }
 
+div > .btn-primary, .btn-primary:visited > #submit-button {
+    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
+    box-shadow: 2px 2px 0 0 #9cb5ff9a;
+    border: none;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.submit-hover:hover {
+    opacity: 0.9;
+    filter: saturate(4);
+}
+
 #booking-fluid {
     position: absolute;
     top: 35vh;
@@ -126,6 +139,23 @@ footer a {
     font-size: 3vmin;
 }
 
+#facebook a:hover {
+    /* color: lightskyblue; */
+    color: royalblue;
+}
+
+#tripadvisor a:hover {
+    color: lightgreen;
+}
+
+#instagram a:hover {
+    color: hotpink;
+}
+
+#yelp a:hover {
+    color: red;
+}
+
 footer .footer-text {
     font-size: 1em;
     text-align: center;
@@ -135,6 +165,10 @@ footer .footer-text {
 footer .up-icon {
     text-align: center;
     order: 2;
+}
+
+.up-icon a:hover {
+    color: lightgray;
 }
 
 footer .social-icons {
