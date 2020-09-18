@@ -93,10 +93,6 @@
     object-fit: cover;
 }
 
-/* #gallery [class*='col-'] {
-    padding: 1vw;
-} */
-
 @media only screen and (max-width : 768px) {
     #bg-full {
         height: 50vh;
@@ -134,5 +130,9 @@
         margin-top: 10px;
         font-size: 2vh;
         padding-right: 20px;
+    }
+
+    #gallery {
+        margin: 1em 0;
     }
 }
