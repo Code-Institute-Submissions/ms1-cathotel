@@ -9,6 +9,10 @@ html {
     height: 100vh;
 }
 
+#nav-fluid > .navbar > .fas, .fa-cat:hover {
+    transform:rotate(10deg);
+}
+
 #nav-fluid {
     position: absolute;
     top: 0px;
@@ -118,8 +122,6 @@ div > .btn-primary, .btn-primary:visited > #submit-button {
     object-fit: contain;
 }
 
-
-
 .gallery-image {
     /* width: 23vw; */
     width: auto;
@@ -186,7 +188,7 @@ footer .social-icons {
     #nav-fluid {
         background-color: rgb(80, 80, 80);
         position: fixed;
-        z-index: 1;
+        z-index: 2;
     }
 
     #booking-fluid {
