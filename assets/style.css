@@ -79,10 +79,30 @@ html {
     transition: opacity 0.3s;
 }
 
-.carousel-item img {
+/* .carousel-item img {
+    width: 100%;
+    height: auto;
+} */
+
+.carousel-inner img {
     width: 100%;
     height: auto;
 }
+
+.gallery-carousel-inner {
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    text-align: center;
+}
+
+.gallery-carousel-inner img {
+    width: 100vw;
+    height: 70vh;
+    object-fit: contain;
+}
+
+
 
 .gallery-image {
     /* width: 23vw; */
