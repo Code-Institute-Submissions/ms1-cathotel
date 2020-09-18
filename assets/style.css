@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #bg-full {
     background: linear-gradient( rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0) ), url("https://i.imgur.com/e6BjfTJ.jpg") no-repeat left top;
     /* image url is temporary for the purposes of pushing to github, it will be a relative filepath eventually */
@@ -93,6 +97,27 @@
     object-fit: cover;
 }
 
+footer a {
+    padding: 0px 10px;
+    color: white;
+    font-size: 3vmin;
+}
+
+footer .footer-text {
+    font-size: 1em;
+    text-align: center;
+    order: 1;
+}
+
+footer .up-icon {
+    text-align: center;
+    order: 2;
+}
+
+footer .social-icons {
+    order: 3;
+}
+
 @media only screen and (max-width : 768px) {
     #bg-full {
         height: 50vh;
@@ -132,5 +157,15 @@
 
     #gallery {
         margin: 1em 0;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    footer .footer-text {
+        order: 2;
+    }
+    
+    footer .up-icon {
+        order: 1;
     }
 }
