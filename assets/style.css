@@ -88,17 +88,20 @@ html {
     width: 100%;
     height: auto;
 }
+/* when i add an anchor, this might have to target the anchor not the img */
 
 .gallery-carousel-inner {
     width: 100vw;
-    height: 70vh;
+    /* height: 70vh; */
+    height: 50vh;
     background-color: black;
     text-align: center;
 }
 
 .gallery-carousel-inner img {
     width: 100vw;
-    height: 70vh;
+    /* height: 70vh; */
+    height: 50vh;
     object-fit: contain;
 }
 
