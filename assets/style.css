@@ -57,6 +57,10 @@ div > .btn-primary, .btn-primary:visited > .submit-button {
     margin: 0;
 }
 
+#testimonial em {
+    font-size: 0.8em;
+}
+
 #testimonial {
     background-color: rgb(247, 247, 247);
     padding: 40px;
@@ -67,10 +71,6 @@ div > .btn-primary, .btn-primary:visited > .submit-button {
     color: gray;
     font-size: 1em;
     padding: 0;
-}
-
-#testimonial em {
-    font-size: 0.8em;
 }
 
 .logo-grid {
