@@ -3,8 +3,7 @@ html {
 }
 
 #bg-full {
-    background: linear-gradient( rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0) ), url("https://i.imgur.com/e6BjfTJ.jpg") no-repeat left top;
-    /* image url is temporary for the purposes of pushing to github, it will be a relative filepath eventually */
+    background: linear-gradient( rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0) ), url("images/banner-img.JPG") no-repeat left top;
     background-size: cover;
     height: 100vh;
 }
@@ -21,6 +20,8 @@ html {
 #nav-fluid > .navbar > .container-fluid > h1 {
     font-size: 1.8vmax;
     font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* why is this loading late? */
 }
 
 .navbar a {
