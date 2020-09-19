@@ -106,10 +106,8 @@ div > .btn-primary, .btn-primary:visited > .submit-button {
 }
 /* when i add an anchor, this might have to target the anchor not the img */
 
-#gallery > div > div > div > #gallery-carousel > ul > li {
-    background-color: red;
-    z-index: -2;
-}
+/* #gallery > div > div > div > #gallery-carousel > ul > li {
+} */
 
 .gallery-carousel-inner {
     width: 100vw;
