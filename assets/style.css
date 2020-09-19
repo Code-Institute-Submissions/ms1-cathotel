@@ -66,6 +66,7 @@ div > .btn-primary, .btn-primary:visited > .submit-button {
 #testimonial a {
     color: gray;
     font-size: 1em;
+    padding: 0;
 }
 
 #testimonial em {
