@@ -206,14 +206,17 @@ footer .social-icons {
     #bg-full {
         height: 50vh;
         position: relative;
+        top: 60px;
     }
 
     .hero-carousel-inner img {
         height: 50vh;
+        top: 60px;
     }
 
     .hero-carousel-inner {
         height: 50vh;
+        top: 60px;
     }
 
     #nav-fluid {
