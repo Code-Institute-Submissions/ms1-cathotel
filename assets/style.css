@@ -2,12 +2,29 @@ html {
     scroll-behavior: smooth;
 }
 
-#bg-full {
-    background: linear-gradient( rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0) ), url("images/banner-img.JPG") no-repeat left top;
-    background-size: cover;
+.hero-carousel-inner {
+    width: 100vw;
     height: 100vh;
-    top: 60px;
+    text-align: center;
 }
+
+.hero-carousel-inner img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Source: https://stackoverflow.com/a/44463901/4595147 */
+.hero-carousel-inner:after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient(rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0));
+}
+
 
 #nav-fluid > .navbar > .fas, .fa-cat:hover {
     transform:rotate(10deg);
@@ -189,6 +206,14 @@ footer .social-icons {
     #bg-full {
         height: 50vh;
         position: relative;
+    }
+
+    .hero-carousel-inner img {
+        height: 50vh;
+    }
+
+    .hero-carousel-inner {
+        height: 50vh;
     }
 
     #nav-fluid {
