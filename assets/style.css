@@ -203,7 +203,7 @@ footer .social-icons {
         padding-bottom: 10px;
     }
 
-    #nav-fluid .navbar-brand {
+    #nav-fluid .navbar-brand{
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -245,6 +245,10 @@ footer .social-icons {
 
     footer .up-icon {
         order: 1;
+    }
+
+    footer .social-icons {
+        order: 3
     }
 
     footer .fab {
