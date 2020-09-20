@@ -54,14 +54,14 @@
             <div class="mb-3 px-2" id="booking-subheader">
                 We are a 5-star registered cattery based in South West England, close to the A303 for easy access.
             </div>
-            <form>
+            <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
                 <div class="form-group d-inline-flex flex-wrap">   
-                    <div class="order-1 px-2"><input type="text" class="form-control mb-2" placeholder="Full Name"></div>
-                    <div class="order-2 px-2"><input type="email" class="form-control mb-2" placeholder="Email Address"></div>
-                    <div class="order-3 px-2"><input type="text" class="form-control mb-2" placeholder="Cat's Name"></div>
-                    <div class="order-4 px-2"><input type="text" class="form-control mb-2" placeholder="Phone Number"></div>
-                    <div class="order-5 px-2"><input type="number" class="form-control mb-2" placeholder="No. of nights"></div>
-                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary submit-button submit-hover">Submit</button></div>
+                    <div class="order-1 px-2"><input type="text" class="form-control mb-2" name="name" placeholder="Full Name" required></div>
+                    <div class="order-2 px-2"><input type="email" class="form-control mb-2" name="email" placeholder="Email Address" required></div>
+                    <div class="order-3 px-2"><input type="text" class="form-control mb-2" name="cat" placeholder="Cat's Name" required></div>
+                    <div class="order-4 px-2"><input type="text" class="form-control mb-2" name="phone" placeholder="Phone Number" required></div>
+                    <div class="order-5 px-2"><input type="number" class="form-control mb-2" name="nights" placeholder="No. of nights" required></div>
+                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary submit-button submit-hover" required>Submit</button></div>
                 </div>
             </form>
         </div>
@@ -330,14 +330,14 @@
                     <!-- invisible margin shown only on medium -->
                     <div class="my-2 d-none d-sm-none d-md-block d-lg-none"></div>
                     <div class="h4">Contact Us</div>
-                    <form>
+                    <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
                         <div class="form-group">   
-                            <div class="order-1 py-1"><input type="text" class="form-control mb-2" placeholder="Full Name"></div>
-                            <div class="order-2 py-1"><input type="email" class="form-control mb-2" placeholder="Email Address"></div>
-                            <div class="order-4 py-1"><input type="text" class="form-control mb-2" placeholder="Phone Number"></div>
+                            <div class="order-1 py-1"><input type="text" name="name" class="form-control mb-2" placeholder="Full Name" required></div>
+                            <div class="order-2 py-1"><input type="email" name="email" class="form-control mb-2" placeholder="Email Address" required></div>
+                            <div class="order-4 py-1"><input type="text" name="phone" class="form-control mb-2" placeholder="Phone Number" required></div>
                             <div class="order-5 py-1"><label for="contact-message">Message:</label></div>
-                            <div class="order-6"><textarea class="form-control" id="contact-message" rows="3"></textarea></div>
-                            <div class="order-7 mt-4"><button type="submit" class="btn btn-primary submit-button submit-hover">Submit</button></div>
+                            <div class="order-6"><textarea class="form-control" name="message" id="contact-message" rows="3" required></textarea></div>
+                            <div class="order-7 mt-4"><button type="submit" class="btn btn-primary submit-button submit-hover" value="submit" required>Submit</button></div>
                         </div>
                     </form>
                     <hr class="divider my-4 d-block d-sm-block d-md-none d-lg-none">
