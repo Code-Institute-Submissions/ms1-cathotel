@@ -6,6 +6,7 @@ html {
     background: linear-gradient( rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0) ), url("images/banner-img.JPG") no-repeat left top;
     background-size: cover;
     height: 100vh;
+    top: 60px;
 }
 
 #nav-fluid > .navbar > .fas, .fa-cat:hover {
@@ -188,14 +189,13 @@ footer .social-icons {
     #bg-full {
         height: 50vh;
         position: relative;
-        margin-top: 7.5vh;
-        /* This margin-top is temporary, try to find a better way */
     }
 
     #nav-fluid {
         background-color: rgb(80, 80, 80);
         position: fixed;
         z-index: 16;
+        min-height: 60px;
     }
 
     #booking-fluid {
