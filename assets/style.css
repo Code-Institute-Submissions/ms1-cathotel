@@ -195,7 +195,7 @@ footer .social-icons {
     #nav-fluid {
         background-color: rgb(80, 80, 80);
         position: fixed;
-        z-index: 2;
+        z-index: 16;
     }
 
     #booking-fluid {
