@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col px-0">
-                        <div id="hero-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+                        <div id="hero-carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
             <!-- SLIDESHOW CONTENT -->
                             <div class="hero-carousel-inner">
                                 <div class="carousel-item active">
@@ -57,11 +57,11 @@
             <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container-fluid">
                     <h1 class="p-0 m-0"><a class="navbar-brand mx-0" href="#"><i class="fas fa-cat"></i> The Cat Hotel.</a></h1>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarMobile">
+                        <menu class="navbar-nav nav-hover" id="nav-items">
                             <li data-toggle="collapse" data-target=".navbar-collapse">
                                 <a class="nav-link" href="#">Home</a>
                             </li>
@@ -77,7 +77,7 @@
                             <li data-toggle="collapse" data-target=".navbar-collapse">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
-                        </div>
+                        </menu>
                     </div>
                 </div>
             </nav>
@@ -91,26 +91,26 @@
                 We are a 5-star registered cattery based in South West England, close to the A303 for easy access.
             </div>
             <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
-                <div class="form-group d-inline-flex flex-wrap">   
+                <div class="form-group d-inline-flex flex-wrap" id="booking-form">
                     <div class="order-1 px-2"><input type="text" class="form-control mb-2" name="name" placeholder="Full Name" required></div>
                     <div class="order-2 px-2"><input type="email" class="form-control mb-2" name="email" placeholder="Email Address" required></div>
                     <div class="order-3 px-2"><input type="text" class="form-control mb-2" name="cat" placeholder="Cat's Name" required></div>
                     <div class="order-4 px-2"><input type="text" class="form-control mb-2" name="phone" placeholder="Phone Number" required></div>
                     <div class="order-5 px-2"><input type="number" class="form-control mb-2" name="nights" placeholder="No. of nights" required></div>
-                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary submit-button submit-hover" required>Submit <i class="fas fa-paw pl-1"></i></button></div>
+                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary submit-button submit-hover">Submit <i class="fas fa-paw pl-1"></i></button></div>
                 </div>
             </form>
         </div>
     </section>
     <hr class="divider">
     <section id="pricing">
-        <div class="text-center my-4 h4">
+        <div class="text-center my-4 h3">
             Pricing
         </div>
         <div class="container mb-5">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <table class="table table-striped">
+                    <table class="table table-striped text-center">
                         <tr>
                             <th>No. of cats</th>
                             <th>Price per day</th>
@@ -153,7 +153,7 @@
     <hr class="divider">
     <!-- START OF NEWSPAPERS -->
     <section id="newspapers">
-        <div class="text-center my-4 h4">
+        <div class="text-center my-4 h3">
             As Featured In
         </div>
         <div class="container-fluid mb-5 logo-grid">
@@ -227,7 +227,7 @@
                 <!-- ABOUT TEXT -->
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" id="about-text">
                     <div id="about-content">
-                    <div class="h4">About</div>
+                    <div class="h3">About</div>
                         <p>Animals have always been a part of our lives, and we had an opportunity to make animals a part of our working life.</p>
                         <p>So why a cattery? Well it fitted in with our property and surroundings, plus the fact that boarding cats is not well catered for in South Wiltshire, so the plan was launched to build our very own Cattery.</p>
                         <p>We have invested in the highest quality chalets, made by Britain's leading UPVC Cattery manufacturer Pedigree Pens They are double glazed, centrally heated, well lit, spacious, and set in a wonderful garden which is always full of birds and butterflies, oh and our resident flock of chickens. So there is plenty of visual stimulation for our guests to view as they survey their surroundings and enjoy the Wiltshire sunshine.</p>
@@ -239,7 +239,7 @@
     <hr class="divider">
     <!-- START OF PRODUCT PARTNERS -->
     <section id="pet-brands">
-        <div class="text-center my-4 h4">
+        <div class="text-center my-4 h3">
             Our Product Partners
         </div>
         <div class="container-fluid mb-5 logo-grid">
@@ -262,7 +262,7 @@
     <hr class="divider">
     <!-- START OF GALLERY -->
     <section id="gallery">
-        <div class="h4 m-4">Gallery</div>
+        <div class="h3 m-4 text-center">Gallery</div>
         <!-- DESKTOP/TABLET GALLERY GRID -->
         <div class="container-fluid d-none d-sm-none d-md-block d-lg-block">
             <div class="row no-gutters">
@@ -421,7 +421,7 @@
                             <div class="order-4 py-1"><input type="text" name="phone" class="form-control mb-2" placeholder="Phone Number" required></div>
                             <div class="order-5 py-1"><label for="contact-message">Message:</label></div>
                             <div class="order-6"><textarea class="form-control" name="message" id="contact-message" rows="3" required></textarea></div>
-                            <div class="order-7 mt-4"><button type="submit" class="btn btn-primary submit-button submit-hover" value="submit" required>Submit <i class="fas fa-envelope pl-1"></i></button></div>
+                            <div class="order-7 mt-4"><button type="submit" class="btn btn-primary submit-button submit-hover" value="submit">Submit <i class="fas fa-envelope pl-1"></i></button></div>
                         </div>
                     </form>
                     <hr class="divider my-4 d-block d-sm-block d-md-none d-lg-none">

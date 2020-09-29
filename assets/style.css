@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .hero-carousel-inner {
     width: 100vw;
     height: 100vh;
@@ -35,14 +39,31 @@ html {
     top: 0px;
 }
 
+#nav-fluid > nav > div > h1 > a {
+    font-size: 1.8rem;
+}
+
 #nav-fluid > .navbar > .container-fluid > h1 {
-    font-size: 1.8vmax;
+    /* font-size: 1.8vmax; */
     font-weight: 400;
     font-family: 'Kumbh Sans', sans-serif;
     /* why is this loading late? */
 }
 
-.navbar a {
+#nav-items li a {
+    color: rgba(255,255,255,.7);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 4px 8px;
+    margin: 8px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+#nav-items li a:hover {
+    color: rgba(255,255,255);
+    background-color: rgba(255,255,255,.1);
+    border-radius: 10px;
     font-size: 1.5em;
 }
 
@@ -226,15 +247,21 @@ footer .social-icons {
         min-height: 60px;
     }
 
-    #nav-fluid .navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    #nav-fluid > nav > div > h1 > a {
+        font-size: 1.4rem;
     }
 
-    #nav-fluid .navbar-brand{
+    /* #nav-fluid .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    } */
+
+    /* #nav-fluid .navbar-brand{
         margin-top: 5px;
         margin-bottom: 5px;
-    }
+    } */
+
+
 
     #booking-fluid {
         position: relative;
@@ -290,5 +317,12 @@ footer .social-icons {
 /* Up to iPhone X */
     footer .fab {
         font-size: 2em;
+    }
+}
+
+/* To address issues with alignment on XR */
+@media only screen and (max-width : 414px) {
+    #booking-fluid #booking-form input{
+        width: 250px;
     }
 }
