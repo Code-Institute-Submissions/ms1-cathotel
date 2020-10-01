@@ -102,6 +102,9 @@ The project is for a fictional cattery business based in South West England. The
 * Booking calendar so the customer can see live availability without the need to 'request' a booking, they would receive an immediate confirmation
 * Payment system so they can pay a deposit through the website as opposed to in-person on the premises
 * Review system so the testimonials section can run independent of third party websites such as TripAdvisor/Yelp
+* Improve Performance of load times, using Google Lighthouse as a metric to track any improvements. A few ways to approach this would be:
+  * To use Javascript to dynamically change the resolution of images to be appropriate for the screen size viewing them. 
+  * To convert the images to a next-gen image format such as WebP, which is steadily gaining more browser support (Safari 14 just announced support). Until WebP gains complete cross-browser support, writing in a fallback image format would be ideal to avoid some users not being able to load any images.
 
 ## Structure
  
@@ -194,7 +197,9 @@ Shadow: #9cb5ff9a
 * After some minor adjustments, my project passed the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/).
 
 ### Lighthouse
-score
+<img src="https://i.imgur.com/8XWZo8D.png" alt="lighthouse score"/>  
+
+*Performance improvements detailed in [Scope: Long Term Vision](#long-term-vision) section.*
 
 ### Bugs
 After deployment, I found multiple bugs that needed addressing.
