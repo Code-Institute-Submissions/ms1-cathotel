@@ -6,9 +6,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container-fluid {
+/* .container-fluid {
     width: 100vw;
-}
+} */
 
 
 .hero-carousel-inner {
@@ -252,6 +252,7 @@ footer .social-icons {
         position: fixed;
         min-height: 60px;
     }
+
 
     #nav-fluid > nav > div > h1 > a {
         font-size: 1.4rem;
