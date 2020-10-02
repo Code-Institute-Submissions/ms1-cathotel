@@ -7,8 +7,9 @@ body {
 }
 
 .container-fluid {
-    width: 100vw !important;
+    width: 100vw;
 }
+
 
 .hero-carousel-inner {
     width: 100vw;
@@ -63,14 +64,6 @@ body {
     margin: 8px;
     transition: background-color 0.3s;
     border-radius: 10px;
-}
-
-#nav-fluid > nav > button {
-    background-color: red;
-}
-
-#nav-fluid > nav > button > span {
-    background-color: blue;
 }
 
 
