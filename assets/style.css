@@ -60,6 +60,15 @@ body {
     border-radius: 10px;
 }
 
+#nav-fluid > nav > button {
+    background-color: red;
+}
+
+#nav-fluid > nav > button > span {
+    background-color: blue;
+}
+
+
 #nav-items li a:hover {
     color: rgba(255,255,255);
     background-color: rgba(255,255,255,.1);
@@ -294,6 +303,7 @@ footer .social-icons {
 
 @media only screen and (max-width : 768px) {
 /* Up to iPad */
+/* LOOK ABOVE, THERE IS ANOTHR 768 */
 
     footer .footer-text {
         order: 2;
