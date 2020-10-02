@@ -204,14 +204,14 @@ Shadow: #9cb5ff9a
 ### Bugs
 After deployment, I found multiple bugs that needed addressing.
 
-| Bug                                             | Fix                   | Resolved/Outstanding? |    
-|:------------------------------------------------|:----------------------| :---|
-| Mobile nav didn't collapse after click | Found the appropriate collapse class from Bootstrap documentation | Resolved |
-| Links stop working after applying collapse code | Wrapped nav items in a `<li>` as advised ([see Credits section](#credits-attributes)) | Resolved |
-| Footer social icons too small at mobile breakpoint | Changed font-size at various breakpoints to keep it responsive | Resolved |
-| Gap of white space between mobile nav and hero image | Changed nav to be a fixed height and specified the top positioning to the hero image | Resolved |
-| Indicators on carousel visible on top of mobile nav | Adjusted z-index for mobile navbar until it was on a higher level than the Bootstrap carousel indicators | Resolved |
-| Mobile nav icon flickers when carousel slides to next image | Changing the container-fluid to 100vw rather than 100% resolves the issue but then breaks the fixed positioning. Neither the flickering icon or positioning occur when testing on an actual iPhone, it only occurs when viewing the site in Chrome's Dev Tools. I have decided to keep the flickering icon issue as I felt this had the lesser impact on the user experience of the two bugs. | Outstanding |
+| Bug                                             | Fix                   |    
+|:------------------------------------------------|:----------------------|
+| Mobile nav didn't collapse after click | Found the appropriate collapse class from Bootstrap documentation. **Resolved.** |
+| Links stop working after applying collapse code | Wrapped nav items in a `<li>` as advised ([see Credits section](#credits-attributes)) **Resolved.** |
+| Footer social icons too small at mobile breakpoint | Changed font-size at various breakpoints to keep it responsive **Resolved.** |
+| Gap of white space between mobile nav and hero image | Changed nav to be a fixed height and specified the top positioning to the hero image **Resolved.** |
+| Indicators on carousel visible on top of mobile nav | Adjusted z-index for mobile navbar until it was on a higher level than the Bootstrap carousel indicators **Resolved.** |
+| Mobile nav icon flickers when carousel slides to next image | Changing the container-fluid to 100vw rather than 100% resolves the issue but then breaks the fixed positioning. Neither the flickering icon or positioning occur when testing on an actual iPhone, it only occurs when viewing the site in Chrome's Dev Tools. I have decided to keep the flickering icon issue as I felt this had the lesser impact on the user experience of the two bugs. **Outstanding.** |
 
 
 ### Cross-browser Compatability
