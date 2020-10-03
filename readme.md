@@ -141,8 +141,7 @@ You can see how the final design retains a lot of the structure from the wirefra
 There is a light accent colour of a gradiented-blue throughout the site found on the submit buttons, but primarily I wanted the colour to derive from the photos used extensively throughout rather than from text or icons.
 
 #### Buttons
-Hex (gradient): #0B44EF > #007dfa (-45 degree angle)  
-Shadow: #9cb5ff9a  
+Hex (gradient): #0B44EF <img src="assets/images/swatch-0B44EF.jpg" alt="swatch of #0B44EF"/> > #007dfa <img src="assets/images/swatch-007dfa.jpg" alt="swatch of #007dfa"/> (-45 degree angle)  
 ##### *Default / Hover* 
 <img src="https://i.imgur.com/7opV2o4.png" alt="submit button" width="147" height="46" /><img src="https://i.imgur.com/d0PNr7p.png" alt="submit button" width="147" height="46" />   
 <img src="https://i.imgur.com/AfXIDbb.png" alt="submit button" width="147" height="46" /><img src="https://i.imgur.com/NHeGNvt.png" alt="submit button" width="147" height="46" />
