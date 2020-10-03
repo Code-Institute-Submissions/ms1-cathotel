@@ -231,7 +231,9 @@ used screen reading on iphone
 ## Final product
 Initially I had completed around 70-80% of the project by writing it in vanilla HTML and CSS, primarily using CSS grids for structure. I decided to remake the project from scratch using Bootstrap as I felt it would produce a better experience for mobile users. It was also a useful exercise as it meant I became a lot more comfortable with using Bootstrap.  
 <hr>
-Below are examples of how it looked vs the end product: 
+Below are examples of how it looked vs the end product:  
+
+<img src="assets/images/firstdraft.gif" alt="GIF demonstrating first draft"/>  
 
 ## Credits & Attributes
 * All photographs taken by me
