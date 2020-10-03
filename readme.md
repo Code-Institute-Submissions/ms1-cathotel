@@ -20,7 +20,7 @@ View the Github repo: [here](https://github.com/rbsam176/ms1-cathotel)
     * [Surface](#surface)
         * [Animation](#animation)
         * [Colour](#colour)
-        * [Typography](#typography)
+        * [Typography/Icons](#typography-icons)
 * [Accessibility](#accessibility)
 * [Technologies Used](#technologies-used)
 * [Resources](#resources)
@@ -154,15 +154,22 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 <img src="https://i.imgur.com/AfXIDbb.png" alt="submit button" width="147" height="46" /><img src="https://i.imgur.com/NHeGNvt.png" alt="submit button" width="147" height="46" />
 
 
-### Typography
+### Typography/Icons 
 
-**Logo Icon:** Sourced from FontAwesome  
-**Title:** Kumbh Sans  
-**Navigation:** Roboto  
-**Titles:**  Roboto  
-**Content:** Roboto  
-
-[CHECK CODE FOR FONT, FORCE TO USE ROBOTO ETC]
+| Useage              | Source                        |
+|:--------------------|:------------------------------|
+| Logo Icon           | [FontAwesome](https://fontawesome.com/icons/cat?style=solid) |
+| Booking button icon | [FontAwesome](https://fontawesome.com/icons/paw?style=solid) |
+| Contact button icon | [FontAwesome](https://fontawesome.com/icons/envelope?style=solid) |
+| Facebook icon | [FontAwesome](https://fontawesome.com/icons/facebook-f?style=brands) |
+| Yelp icon | [FontAwesome](https://fontawesome.com/icons/yelp?style=brands) |
+| Instagram icon | [FontAwesome](https://fontawesome.com/icons/instagram?style=brands) |
+| TripAdvisor icon | [FontAwesome](https://fontawesome.com/icons/tripadvisor?style=brands) |
+| Footer up icon | [FontAwesome](https://fontawesome.com/icons/angle-up?style=solid) |
+| Title               | [Roboto](https://fonts.google.com/specimen/Roboto)           |
+| Navigation          | [Roboto](https://fonts.google.com/specimen/Roboto)           |
+| Titles              | [Roboto](https://fonts.google.com/specimen/Roboto)           |
+| Content             | [Roboto](https://fonts.google.com/specimen/Roboto)           |
 
 ## Accessibility
 
