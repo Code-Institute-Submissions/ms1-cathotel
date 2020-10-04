@@ -175,8 +175,10 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 ## Accessibility
 
 ### Alt tags
+As images make up a big portion of the design of the project, I wanted to ensure the equivilent experience to someone using a screen reader was of comparable quality by providing all images with descriptive alt tags.
+
 ### Forms
-### Aria-labels
+Both forms featured on the site, Booking and Contact, have aria-labels so that screen readers read out what content belongs in each input field.
 
 ## Technologies Used
 
@@ -207,8 +209,6 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 ### Validation
 <a href="https://validator.w3.org"><img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a> <a href="https://jigsaw.w3.org/css-validator/"><img src="assets/images/css-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a>
 
-
-
 ### Lighthouse
 <img src="https://i.imgur.com/8XWZo8D.png" alt="lighthouse score"/>  
 
@@ -232,7 +232,7 @@ After deployment, I found multiple bugs that needed addressing.
 * Smooth Scrolling enabled, currently isn't supposed in Safari without additional Javascipt.
 
 ### Accessibility Testing
-used screen reading on iphone
+When the project was nearing completion, I enabled VoiceOver on my iPhone to ensure that it was able to select all of the elements without issue and that it read out the correct alt tags.
 
 ## Deployment
 * I spent time studying how Git works for this project, in particular a workflow called Git Flow. This was beyond what was covered in our Code Institute module as I felt it was important to get used to the tools an everyday developer would use and I had an interest in how it worked. Rather than using GitPod, I used my own IDE and its built-in terminal to handle version control.  
@@ -268,8 +268,4 @@ Below are examples of how it looked vs the end product:
 * Jim Morel (JimLynx_Lead)
   * After I implemented Bootstrap's mobile navigation bar collapse-after-click code my links suddenly stopped working. Jim advised me to wrap them in a <li> to regain the functionality.
 
-
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+### [Back to top.](#)
