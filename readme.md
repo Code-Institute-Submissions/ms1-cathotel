@@ -180,35 +180,35 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 
 ## Technologies Used
 
-| Technology  | Use                           |
-|:------------|:------------------------------|
-| HTML        | Content                       |
-| CSS         | Styling                       |
-| Bootstrap   | Structure and responsiveness  |
-| Bootstrap JS| Carousels                     |
-| FontAwesome | Logo and Submit button icons  |
-| Google Fonts| Importing of Web Fonts        |
-| Git & Github| Version Control & Deployment  |
+| Technology  | Use                             |
+|:------------|:--------------------------------|
+| HTML        | Content                         |
+| CSS         | Styling                         |
+| [Bootstrap](https://getbootstrap.com)   | Responsive structure, carousels |
+| [FontAwesome](https://fontawesome.com) | Logo and Submit button icons    |
+| [Google Fonts](https://fonts.google.com)| Importing of Web Fonts          |
+| Git & [Github](https://github.com)| Version Control & Deployment    |
 
 
 ## Resources
 
 | Resource           | Use                                       |
 |:-------------------|:------------------------------------------|
-| Shoelace.io        | Visualising Bootstrap grids before coding |
-| Balsamiq           | Wireframing                               |
-| VS Code            | IDE and used for Git version control      |
-| Github             | Used as remote repository                 |
-| Chrome Dev Tools   | For debugging CSS issues                  |
-| Notion             | Notes & todo list, tracking progress      |
-| W3C HTML Validator | Validation of HTML code                   |
-| W3C CSS Validator  | Validation of CSS code                    |
+| [Shoelace.io](http://shoelace.io)        | Visualising Bootstrap grids before coding |
+| [Balsamiq](https://balsamiq.com)           | Wireframing                               |
+| [VS Code](https://code.visualstudio.com)            | IDE and used for Git version control      |
+| [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)   | For debugging CSS issues                  |
+| [Notion](https://www.notion.so)             | Notes & todo list, tracking progress      |
+| [W3C HTML Validator](https://validator.w3.org) | Validation of HTML code                   |
+| [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  | Validation of CSS code                    |
 
 ## Testing
 
 ### Validation
-* My project passed the [W3 HTML Validator](https://validator.w3.org/)
-* After some minor adjustments, my project passed the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/).
+<img src="assets/images/css-validator-badge.png" alt="w3 css validation passed"/>  
+
+<img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed"/>  
+
 
 ### Lighthouse
 <img src="https://i.imgur.com/8XWZo8D.png" alt="lighthouse score"/>  
