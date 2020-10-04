@@ -210,7 +210,7 @@ Both forms featured on the site, Booking and Contact, have aria-labels so that s
 <a href="https://validator.w3.org"><img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a> <a href="https://jigsaw.w3.org/css-validator/"><img src="assets/images/css-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a>
 
 ### Lighthouse
-<img src="https://i.imgur.com/8XWZo8D.png" alt="lighthouse score"/>  
+<img src="assets/images/lighthouse-score.png" alt="lighthouse score"/>  
 
 *Performance improvements detailed in [Scope: Long Term Vision](#long-term-vision) section.*
 
