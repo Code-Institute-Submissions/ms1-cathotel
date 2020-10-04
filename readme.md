@@ -151,8 +151,8 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 `filter: saturate(4);`
 
 ##### Default / Hover 
-<img src="assets/images/bookingsubmit-default" alt="default booking submit button" width="147" height="46" /><img src="assets/images/bookingsubmit-hover" alt="hover booking submit button" width="147" height="46" />   
-<img src="assets/images/contactsubmit-default" alt="default contact submit button" width="147" height="46" /><img src="assets/images/contactsubmit-hover" alt="default contact submit button" width="147" height="46" />
+<img src="assets/images/bookingsubmit-default.png" alt="default booking submit button" width="147" height="46" /><img src="assets/images/bookingsubmit-hover.png" alt="hover booking submit button" width="147" height="46" />   
+<img src="assets/images/contactsubmit-default.png" alt="default contact submit button" width="147" height="46" /><img src="assets/images/contactsubmit-hover.png" alt="default contact submit button" width="147" height="46" />
 
 
 ### Typography/Icons 
