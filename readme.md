@@ -205,9 +205,10 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 ## Testing
 
 ### Validation
-<img src="assets/images/css-validator-badge.png" alt="w3 css validation passed"/>  
+<a href="https://validator.w3.org"><img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a>  
 
-<img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed"/>  
+<a href="https://jigsaw.w3.org/css-validator/"><img src="assets/images/css-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a>
+
 
 
 ### Lighthouse
