@@ -248,6 +248,8 @@ Below are examples of how it looked vs the end product:
 
 <img src="assets/images/firstdraft.gif" alt="GIF demonstrating first draft"/>  
 
+<img src="assets/images/finalproduct.gif" alt="GIF demonstrating final product"/>  
+
 ## Credits & Attributes
 * All photographs taken by me
 * 'About' section text taken and lightly modified from [Secret Garden Cattery](www.secretgardencattery.co.uk) (with permission)
