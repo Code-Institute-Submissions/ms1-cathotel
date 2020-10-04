@@ -123,7 +123,7 @@ You can see how the final design retains a lot of the structure from the wirefra
 
 *Click the image to see it full-size.*  
 
-<a href="https://i.imgur.com/J8esPlv.png"><img src="https://i.imgur.com/J8esPlv.png" alt="submit button" width="472" height="732" /></a>
+<img src="assets/images/cattery-all-media-types.png" alt="submit button" width="472" height="732" />
 
 ## Surface
 
@@ -131,11 +131,11 @@ You can see how the final design retains a lot of the structure from the wirefra
 
 * Smooth scrolling enabled so the transition from clicking a link to the page arriving at the anchor isn't abrupt. This is unfortunately not compatible with Safari unless Javascript is applied.
 
-[INSERT GIF HERE ONCE SETTLED ON BG IMAGE]
+<img src="assets/images/smoothscroll.gif" alt="GIF of smooth scrolling"/>
 
 * Applied an opacity filter to all links with a smooth fade (0.3s) to avoid an abrupt changing of hue.
 
-<img src="https://i.imgur.com/I6CeDU4.gif" alt="hover effect"/>
+<img src="assets/images/hoverfade.gif" alt="hover effect"/>
 
 ### Colour
 
@@ -151,8 +151,8 @@ There is a light accent colour of a gradiented-blue throughout the site found on
 `filter: saturate(4);`
 
 ##### Default / Hover 
-<img src="https://i.imgur.com/7opV2o4.png" alt="submit button" width="147" height="46" /><img src="https://i.imgur.com/d0PNr7p.png" alt="submit button" width="147" height="46" />   
-<img src="https://i.imgur.com/AfXIDbb.png" alt="submit button" width="147" height="46" /><img src="https://i.imgur.com/NHeGNvt.png" alt="submit button" width="147" height="46" />
+<img src="assets/images/bookingsubmit-default" alt="default booking submit button" width="147" height="46" /><img src="assets/images/bookingsubmit-hover" alt="hover booking submit button" width="147" height="46" />   
+<img src="assets/images/contactsubmit-default" alt="default contact submit button" width="147" height="46" /><img src="assets/images/contactsubmit-hover" alt="default contact submit button" width="147" height="46" />
 
 
 ### Typography/Icons 
