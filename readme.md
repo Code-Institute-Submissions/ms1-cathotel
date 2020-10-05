@@ -94,6 +94,7 @@ The project is for a fictional cattery business based in South West England. The
 
 #### Long-term Vision
 * Dynamic testimonials. This could be done either by changing on each visit/time of day, using a carousel that continually scrolls through, or embedding an external review source such as Tripadvisor/Yelp.
+* Using Javascript to have the fixed mobile nav highlight the section of the page the user is seeing based on their current scroll position.
 * Having a dark-mode version of the site that automatically detects what mode the device is in.
 * Including an AR experience - there are an increasing amount of web-based AR technologies available, which would offer a great immersive insight for the customer.
 * Customer account system, this could allow:
