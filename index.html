@@ -1,191 +1,394 @@
-<html>
-    <title>Auditor</title>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://jeromeetienne.github.io/jquery-qrcode/src/jquery.qrcode.js"></script>
-        <script type="text/javascript" src="https://jeromeetienne.github.io/jquery-qrcode/src/qrcode.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
 
-        <style>
-            .scan-input {
-                width: 85%; 
-                height:100px; 
-                text-align: center; 
-                font-size: 2em; 
-                padding: 1em; 
-                border: 2px solid rgb(17, 80, 175); 
-                border-radius: 10px;
-                margin: 10px 0px;
-            }
-            
-            .tick-icon {
-                color: #19ff19;
-            }
-
-            .green-flash {
-                animation: greenflash 1.5s;
-            }
-
-            .red-flash {
-                animation: redflash 1.5s;
-            }
-
-            @keyframes greenflash {
-                from {background-color: #19ff19;}
-                to {background-color: white;}
-
-            }
-
-            @keyframes redflash {
-                from {background-color: #ff1919;}
-                to {background-color: white;}
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
+    <title>The Cat Hotel.</title>
+</head>
+<body>
+    <section id="banner">
+        <div id="bg-full"></div>
+        <!-- START OF NAV BAR -->
+        <div id="nav-fluid" class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <h1 class="p-0 m-0"><a class="navbar-brand mx-0" href="#"><i class="fas fa-cat"></i> The Cat Hotel.</a></h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li data-toggle="collapse" data-target=".navbar-collapse">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li data-toggle="collapse" data-target=".navbar-collapse">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li data-toggle="collapse" data-target=".navbar-collapse">
+                                <a class="nav-link d-lg-none d-md-none d-sm-block d-block" href="#">Book</a>
+                            </li>
+                            <li data-toggle="collapse" data-target=".navbar-collapse">
+                                <a class="nav-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li data-toggle="collapse" data-target=".navbar-collapse">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 text-center mt-4">
-                    <img id="logo" src="robotlogo-off.png" style="height: 120px;"><br>
-                    <div class="h1">Auditor</div>
-                </div>
-                <div class="col-3">
-                </div>
+            </nav>
+        </div>
+        <!-- START OF BOOKING CONTAINER -->
+        <div class="container-fluid text-black rounded-lg" id="booking-fluid">
+            <div class="px-2 h4" id="booking-header">
+                Book A Stay With Us
             </div>
+            <div class="mb-3 px-2" id="booking-subheader">
+                We are a 5-star registered cattery based in South West England, close to the A303 for easy access.
+            </div>
+            <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
+                <div class="form-group d-inline-flex flex-wrap">   
+                    <div class="order-1 px-2"><input type="text" class="form-control mb-2" name="name" placeholder="Full Name" required></div>
+                    <div class="order-2 px-2"><input type="email" class="form-control mb-2" name="email" placeholder="Email Address" required></div>
+                    <div class="order-3 px-2"><input type="text" class="form-control mb-2" name="cat" placeholder="Cat's Name" required></div>
+                    <div class="order-4 px-2"><input type="text" class="form-control mb-2" name="phone" placeholder="Phone Number" required></div>
+                    <div class="order-5 px-2"><input type="number" class="form-control mb-2" name="nights" placeholder="No. of nights" required></div>
+                    <div class="order-6 px-2"><button type="submit" class="btn btn-primary submit-button submit-hover" required>Submit</button></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr class="divider">
+    <!-- START OF NEWSPAPERS -->
+    <section id="newspapers">
+        <div class="text-center my-4 h4">
+            As Featured In
+        </div>
+        <div class="container-fluid mb-5 logo-grid">
             <div class="row">
-                <div class="col-2">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto">
+                    <a href="https://www.guardian.co.uk" target="_blank" class="logo"><img class="image-hover" src="assets/images/guardian-logo.png" alt="logo of The Guardian"></a>
                 </div>
-                <div class="col-8 text-center my-2 py-4 bg-light">
-                    <div class="h3 p-4">Scanned Data:</div>
-                    <form id="inputArea">
-                        <div id="scanning-area">
-                            <input type="text" maxlength="10" class="scan-input" autofocus></input><br>
-                        </div>
-                    </form>
-                    <!-- <div class="row my-4">
-                        <div class="col-6">
-                            <input type="radio" value="Mac Audit"> Mac Audit
-                        </div>
-                        <div class="col-6">
-                            <input type="radio" value="Mac Audit"> Part Audit
-                        </div>
-                    </div> -->
-                    <button class="btn btn-primary" onclick="gatherData()">Generate QR Code</button>
-                    <button class="btn btn-secondary" onclick="copyData()">Copy contents to clipboard</button> <i id="copy-icon" class="fas fa-clipboard-list" style="font-size: 2em; vertical-align: middle; padding-left: 10px;"></i>
-                    <div id="qrcodeCanvas" class="m-4"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.bbc.co.uk/news" target="_blank" class="logo"><img class="image-hover" src="assets/images/bbcnews-logo.png" alt="logo of BBC News"></a>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.icatcare.org" target="_blank" class="logo"><img class="image-hover" src="assets/images/icc-logo.png" alt="logo of International Cat Care"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.yourcat.co.uk" target="_blank" class="logo"><img class="image-hover" src="assets/images/yourcat-logo.png" alt="logo of Your Cat Magazine"></a>
                 </div>
             </div>
         </div>
-    </body>
-    <script>
-        // FORCES REPAIR NUMBER FORMATTING
-        // function forceFormatRepair(x){
-        //     x.value=x.value.replace(/^(R\d{0,9})?.*$/, '$1');
-        //     length(x);
-        // }
+    </section>
+    <!-- START OF TESTIMONIALS -->
+    <section id="testimonial">
+        <div class="text-center blockquote">
+            <em>"We use the Cattery with our two cats while we're away on holiday.  We've kept coming back for a few years now because the place is spotlessly clean, very well maintained and the cats are lovingly cared for by the owner, Mark."</em><footer class="blockquote-footer">Dave C on <cite title="Source Title"><a href="https://www.google.co.uk" target="_blank">Google Reviews</a></cite></footer>
+        </div>
+    </section>
+    <!-- START OF ABOUT -->
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <!-- DESKTOP STATIC PHOTO GRID -->
+                <div class="col-lg-6 col-md-12 d-lg-block d-md-block d-sm-none d-none">
+                    <div class="row no-gutters" id="about-images">
+                    <div class="col-lg-6 col-md-3 image-hover"><a href="assets/images/about1.jpg" target="_blank"><img src="assets/images/about1.jpg" alt="Garden path leading up to Cattery"></a></div>
+                    <div class="col-lg-6 col-md-3 image-hover"><a href="assets/images/about2.jpg" target="_blank"><img src="assets/images/about2.jpg" alt="Garden"></a></div>
+                    <div class="col-lg-6 col-md-3 image-hover"><a href="assets/images/about3.jpg" target="_blank"><img src="assets/images/about3.jpg" alt="Cattery fence"></a></div>
+                    <div class="col-lg-6 col-md-3 image-hover"><a href="assets/images/about4.jpg" target="_blank"><img src="assets/images/about4.jpg" alt="Cattery side view"></a></div>
+                    </div>
+                </div>
+                <!-- MOBILE ABOUT CAROUSEL -->
+                <div id="about-carousel" class="carousel slide d-lg-none d-md-none mx-4" data-ride="carousel">
+                    <!-- INDICATORS -->
+                    <ul class="carousel-indicators d-lg-none d-md-none">
+                      <li data-target="#about-carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#about-carousel" data-slide-to="1"></li>
+                      <li data-target="#about-carousel" data-slide-to="2"></li>
+                      <li data-target="#about-carousel" data-slide-to="3"></li>
+                    </ul>
+                    <!-- SLIDESHOW CONTENT -->
+                    <div class="carousel-inner d-lg-none d-md-none">
+                      <div class="carousel-item active">
+                        <a href="assets/images/about1.jpg" target="_blank"><img src="assets/images/about1.jpg" alt="Garden path leading up to Cattery" class="image-hover"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="assets/images/about2.jpg" target="_blank"><img src="assets/images/about2.jpg" alt="Garden" class="image-hover"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="assets/images/about3.jpg" target="_blank"><img src="assets/images/about3.jpg" alt="Cattery fence" class="image-hover"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="assets/images/about4.jpg" target="_blank"><img src="assets/images/about4.jpg" alt="Cattery side view" class="image-hover"></a>
+                      </div>
+                    </div>
+                    <!-- LEFT/RIGHT CONTROLS -->
+                    <a class="carousel-control-prev d-lg-none d-md-none" href="#about-carousel" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next d-lg-none d-md-none" href="#about-carousel" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                <!-- ABOUT TEXT -->
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12" id="about-text">
+                    <div id="about-content">
+                    <div class="h4">About</div>
+                        <p>Animals have always been a part of our lives, and we had an opportunity to make animals a part of our working life.</p>
+                        <p>So why a cattery? Well it fitted in with our property and surroundings, plus the fact that boarding cats is not well catered for in South Wiltshire, so the plan was launched to build our very own Cattery.</p>
+                        <p>We have invested in the highest quality chalets, made by Britain's leading UPVC Cattery manufacturer Pedigree Pens They are double glazed, centrally heated, well lit, spacious, and set in a wonderful garden which is always full of birds and butterflies, oh and our resident flock of chickens. So there is plenty of visual stimulation for our guests to view as they survey their surroundings and enjoy the Wiltshire sunshine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="divider">
+    <!-- START OF PRODUCT PARTNERS -->
+    <section id="pet-brands">
+        <div class="text-center my-4 h4">
+            Our Product Partners
+        </div>
+        <div class="container-fluid mb-5 logo-grid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto">
+                    <a href="https://www.royalcanin.com/uk" target="_blank" class="logo"><img class="image-hover" src="assets/images/royalcanin-logo.png" alt="Logo of Royal Canin"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.uk.sheba.com" target="_blank" class="logo"><img class="image-hover" src="assets/images/sheba-logo.png" alt="Logo of Sheba"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.whiskas.co.uk" target="_blank" class="logo"><img class="image-hover" src="assets/images/whiskas-logo.png" alt="Logo of Whiskas"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-auto logo">
+                    <a href="https://www.purina.co.uk/cat/felix" target="_blank" class="logo"><img class="image-hover" src="assets/images/felix-logo.png" alt="Logo of Flex"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="divider">
+    <!-- START OF GALLERY -->
+    <section id="gallery">
+        <div class="h4 m-4">Gallery</div>
+        <!-- DESKTOP/TABLET GALLERY GRID -->
+        <div class="container-fluid d-none d-sm-none d-md-block d-lg-block">
+            <div class="row no-gutters">
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery1.jpg" target="_blank"><img src="assets/images/gallery1.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery2.jpg" target="_blank"><img src="assets/images/gallery2.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery3.jpg" target="_blank"><img src="assets/images/gallery3.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery4.jpg" target="_blank"><img src="assets/images/gallery4.jpg" alt="cattery garden plants" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery5.jpg" target="_blank"><img src="assets/images/gallery5.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery6.jpg" target="_blank"><img src="assets/images/gallery6.jpg" alt="decorate flowers in the cattery" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery7.jpg" target="_blank"><img src="assets/images/gallery7.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery8.jpg" target="_blank"><img src="assets/images/gallery8.jpg" alt="cattery garden plants" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery9.jpg" target="_blank"><img src="assets/images/gallery9.jpg" alt="cattery exterior with plants" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery10.jpg" target="_blank"><img src="assets/images/gallery10.jpg" alt="decorate flowers in the cattery" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery11.jpg" target="_blank"><img src="assets/images/gallery11.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="gallery-image">
+                        <a href="assets/images/gallery12.jpg" target="_blank"><img src="assets/images/gallery12.jpg" alt="cat" class="square-photo image-hover"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        function logoRed() {
-            document.getElementById("logo").src="robotlogo-red.png";
-        }
 
-        function logoGreen() {
-            document.getElementById("logo").src="robotlogo-green.png";
-        }
-
-        function logoOff() {
-            document.getElementById("logo").src="robotlogo-off.png";
-        }
-
-        function forceFormatRepair(x){
-            const regex = /^(R\d{0,9})?$/;
-            if (x.value.match(regex)) {
-                // NOTHING
-            } else {
-                x.className = "scan-input red-flash"
-                logoRed();
-                setTimeout(function(){ x.classList.remove("red-flash");}, 500);
-                setTimeout(function(){ logoOff(); }, 500);
-            }
-            x.value=x.value.replace(/^(R\d{0,9})?.*$/, '$1');
-            length(x);
-        }
-
-
-        
-
-
-
-
-        // CHECKS LENGTH OF INPUT, CREATES NEW INPUT FIELD AND CHANGES FOCUS
-        function length(x){
-            if (x.value.length == 10){
-                var input = document.createElement("input");
-                input.setAttribute('type', 'text');
-                input.setAttribute('maxLength', '10');
-                // input.className = "scan-input auto-tab";
-                input.className = "scan-input";
-                x.className = "scan-input green-flash"
-                var parent = document.getElementById("scanning-area");
-                parent.appendChild(input);
-                input.focus();
-                x.disabled = true;
-                logoGreen();
-                setTimeout(function(){ logoOff(); }, 500);
-                lookout();
-            }
-        }
-
-        // ALWAYS LISTENING FOR INPUT DETECTION, CALLS ON ABOVE 2 FUNCTIONS
-        [...document.querySelectorAll('.scan-input')].forEach(function(item) {
-            item.addEventListener('input', function() {
-                forceFormatRepair(this);
-            });
-        });
-
-        // FUNCTION VERSION OF ABOVE WHICH IS CALLED FOR DYNAMICALLY CREATD INPUT FIELDS
-        function lookout(){
-            [...document.querySelectorAll('.scan-input')].forEach(function(item) {
-            item.addEventListener('input', function() {
-                forceFormatRepair(this);
-            });
-        });
-        }
-
-        // GATHERS ALL INPUT VALUES AND STORES THEM IN A QR CODE
-        function gatherData(){
-            var x = document.getElementById("inputArea");
-            var txt = "";
-            var i;
-            for (i = 0; i < x.length; i++) {
-                txt = txt + x.elements[i].value + "\n";
-            }
-            jQuery('#qrcodeCanvas').qrcode({
-		        text	: txt
-	        });	
-        }
-
-        function copyData(){
-            var x = document.getElementById("inputArea");
-            var txt = "";
-            var i;
-            for (i = 0; i < x.length; i++) {
-                txt = txt + x.elements[i].value + "\n";
-            }
-
-
-            navigator.clipboard.writeText(txt).then(function() {
-                var copyIcon = document.getElementById("copy-icon");
-                copyIcon.classList.remove("fa-clipboard-list");
-                copyIcon.className = "fas fa-check-circle tick-icon";
-            }, function(err) {
-                alert('Copying the input was not successful.', err);
-            });
-
-        }
-    </script>
+        <!-- MOBILE GALLERY CAROUSEL -->
+        <div class="container-fluid d-lg-none d-md-none d-sm-block d-block">
+            <div class="row">
+                <div class="col px-0">
+                    <div id="gallery-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- INDICATORS -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="3"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="4"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="5"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="6"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="7"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="8"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="9"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="10"></li>
+                          <li data-target="#gallery-carousel" data-slide-to="11"></li>
+                        </ul>
+                        <!-- SLIDESHOW CONTENT -->
+                        <div class="gallery-carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="assets/images/gallery1.jpg" target="_blank"><img src="assets/images/gallery1.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery2.jpg" target="_blank"><img src="assets/images/gallery2.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery3.jpg" target="_blank"><img src="assets/images/gallery3.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery4.jpg" target="_blank"><img src="assets/images/gallery4.jpg" alt="cattery garden plants" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery5.jpg" target="_blank"><img src="assets/images/gallery5.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery6.jpg" target="_blank"><img src="assets/images/gallery6.jpg" alt="decorate flowers in the cattery" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery7.jpg" target="_blank"><img src="assets/images/gallery7.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery8.jpg" target="_blank"><img src="assets/images/gallery8.jpg" alt="cattery garden plants" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery9.jpg" target="_blank"><img src="assets/images/gallery9.jpg" alt="cattery exterior with plants" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery10.jpg" target="_blank"><img src="assets/images/gallery10.jpg" alt="decorate flowers in the cattery" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery11.jpg" target="_blank"><img src="assets/images/gallery11.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="assets/images/gallery12.jpg" target="_blank"><img src="assets/images/gallery12.jpg" alt="cat" class="image-hover"></a>
+                          </div>
+                        </div>
+                        <!-- LEFT/RIGHT CONTROLS -->
+                        <a class="carousel-control-prev" href="#gallery-carousel" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#gallery-carousel" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- START OF CONTACT -->
+    <section id="contact">
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-12 d-none d-sm-none d-md-none d-lg-block my-2"></div>
+                <div class="col-lg-5 col-md-12 col-md-12 col-12 px-4" id="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5150126547383!2d-6.180952184292185!3d53.29822227996904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2suk!4v1599473989691!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <hr class="divider my-4 d-block d-sm-block d-md-none d-lg-none">
+                    <!-- invisible margin shown only on medium -->
+                    <div class="my-2 d-none d-sm-none d-md-block d-lg-none"></div>
+                    <div class="h4">Contact Us</div>
+                    <form class="needs-validation" method="POST" action="https://formdump.codeinstitute.net/">
+                        <div class="form-group">   
+                            <div class="order-1 py-1"><input type="text" name="name" class="form-control mb-2" placeholder="Full Name" required></div>
+                            <div class="order-2 py-1"><input type="email" name="email" class="form-control mb-2" placeholder="Email Address" required></div>
+                            <div class="order-4 py-1"><input type="text" name="phone" class="form-control mb-2" placeholder="Phone Number" required></div>
+                            <div class="order-5 py-1"><label for="contact-message">Message:</label></div>
+                            <div class="order-6"><textarea class="form-control" name="message" id="contact-message" rows="3" required></textarea></div>
+                            <div class="order-7 mt-4"><button type="submit" class="btn btn-primary submit-button submit-hover" value="submit" required>Submit</button></div>
+                        </div>
+                    </form>
+                    <hr class="divider my-4 d-block d-sm-block d-md-none d-lg-none">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <!-- invisible margin shown only on medium -->
+                    <div class="my-2 d-none d-sm-none d-md-block d-lg-none"></div>
+                    <div class="h4 pb-1">Opening Hours</div>
+                    <table class="table table-striped">
+                        <tr><th>Monday</th><td>9am - 5pm</td></tr>
+                        <tr><th>Tuesday</th><td>9am - 12pm</td></tr>
+                        <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+                        <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+                        <tr><th>Friday</th><td>9am - 5pm</td></tr>
+                        <tr><th>Saturday</th><td>9am - 12pm</td></tr>
+                        <tr><th>Sunday</th><td>10am - 11am</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- START OF FOOTER -->
+    <section id="footer">
+        <footer class="page-footer font-small bg-dark text-white p-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 my-auto py-2 footer-text">
+                        Copyright 2020 The Cat Hotel.
+                    </div>
+                    <div class="col-lg-4 col-md-12 my-auto py-2 up-icon">
+                        <a href="#"><i class="fas fa-angle-up"></i></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-flex justify-content-center my-auto py-2 social-icons">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="facebook">
+                                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="tripadvisor">
+                                <a href="https://www.tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="instagram">
+                                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center" id="yelp">
+                                <a href="https://www.yelp.com" target="_blank"><i class="fab fa-yelp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
 </html>
