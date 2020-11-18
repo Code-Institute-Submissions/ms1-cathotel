@@ -25,6 +25,7 @@ View the Github repo: [here](https://github.com/rbsam176/ms1-cathotel)
 * [Technologies Used](#technologies-used)
 * [Resources](#resources)
 * [Testing](#testing)
+	* [Manual testing](#manualtestcases)
     * [Validation](#validation)
     * [Bugs](#bugs)
     * [Cross-browser Compatability](#cross-browser-compatability)
@@ -207,6 +208,35 @@ Both forms featured on the site, Booking and Contact, have aria-labels so that s
 
 ## Testing
 
+### Manual Test Cases
+To ensure the functionality of the project any time code is changed, I have written a series of test cases to be performed to thoroughly check every function remains working.
+
+| Action/Item  | Expected behaviour  |
+|:----------|:----------|
+| Favicon    | Appears correctly, easiest to test by looking at tab in Chome    |
+| Links    | All links open in new tab    |
+| Design scales depending on sceen size    | All elements are clearly visible on various sceen sizes, eg. form elements move to below hero carousel on mobile    |
+| Hero carousel image    | Should rotate image every 4 seconds    |
+| Cursor over navigation item (desktop)    | Should change font colour to white and show a semi-transparent rounded rectangle over the hovered item    |
+| Clicking on nav icon (mobile)    | Drops down list of nav items    |
+| Booking form missing/incorrect data    | Shows a message asking the user to fill in the missing/incorrect field    |
+| Cursor over booking form submit button (desktop)    | Changes brightness/contrast on hovered button    |
+| Clicking on nav icon (mobile)    | Drops down list of nav items    |
+| Featured In and Testimonial icons (desktop)    | Fade increase in brightness when hovered over    |
+| Photos in About section    | Appear as carousel on mobile, static grid on desktop    |
+| Photos in About section    | Fade increase in brightness when hovered over    |
+| Photos in Gallery section    | Appear as carousel on mobile, static grid on desktop    |
+| Photos in Gallery section    | Fade increase in brightness when hovered over    |
+| Google Maps embed    | Appears correctly, showing location of Code Institute school    |
+| Contact form missing/incorrect data    | Shows a message asking the user to fill in the missing/incorrect field    |
+| Cursor over contact form submit button (desktop)    | Changes brightness/contrast on hovered button    |
+| Footer social media icons    | Changes colour to match companies branding when hovered    |
+| Up icon in footer    | Takes user back to the top of the website    |
+
+
+
+
+
 ### Validation
 <a href="https://validator.w3.org"><img src="assets/images/html5-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a> <a href="https://jigsaw.w3.org/css-validator/"><img src="assets/images/css-validator-badge.png" alt="w3 css validation passed" width="352" height="124" /></a>
 
@@ -271,5 +301,6 @@ Below are examples of how it looked vs the end product:
   * Helped me identify what elements was overflowing causing a horizontal scrollbar to appear. Talked me through ways of using Chrome Dev Tools to debug this type of issue.
 * Jim Morel (JimLynx_Lead)
   * After I implemented Bootstrap's mobile navigation bar collapse-after-click code my links suddenly stopped working. Jim advised me to wrap them in a <li> to regain the functionality.
+  * The assessment guidebook indicated that students should "remove commented-out code before publishing final files to version control and deploying" and elsewhere in the guidebook asks to include comments with attributes and defining clear sections. To confirm whether these types of comments should stay I asked Jim. Message link [here](https://code-institute-room.slack.com/archives/C7J2ZAVHB/p1605697167419900?thread_ts=1605697102.419800&cid=C7J2ZAVHB).
 
 ### [Back to top.](#)
