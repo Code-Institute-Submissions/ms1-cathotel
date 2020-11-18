@@ -220,6 +220,7 @@ To ensure the functionality of the project any time code is changed, I have writ
 | Cursor over navigation item (desktop)    | Should change font colour to white and show a semi-transparent rounded rectangle over the hovered item    |
 | Clicking on nav icon (mobile)    | Drops down list of nav items    |
 | Booking form missing/incorrect data    | Shows a message asking the user to fill in the missing/incorrect field    |
+| Booking form 'number of nights'    | Should enforce a minimum of 1 night, 0 and minus numbers aren't accepted    |
 | Cursor over booking form submit button (desktop)    | Changes brightness/contrast on hovered button    |
 | Clicking on nav icon (mobile)    | Drops down list of nav items    |
 | Featured In and Testimonial icons (desktop)    | Fade increase in brightness when hovered over    |
@@ -230,6 +231,7 @@ To ensure the functionality of the project any time code is changed, I have writ
 | Google Maps embed    | Appears correctly, showing location of Code Institute school    |
 | Contact form missing/incorrect data    | Shows a message asking the user to fill in the missing/incorrect field    |
 | Cursor over contact form submit button (desktop)    | Changes brightness/contrast on hovered button    |
+| Both forms 'phone number' field    | Should only accept numbers, no letters    |
 | Footer social media icons    | Changes colour to match companies branding when hovered    |
 | Up icon in footer    | Takes user back to the top of the website    |
 
