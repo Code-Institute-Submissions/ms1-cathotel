@@ -6,11 +6,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* .container-fluid {
-    width: 100vw;
-} */
-
-
 .hero-carousel-inner {
     width: 100vw;
     height: 100vh;
@@ -34,7 +29,6 @@ body {
     background:linear-gradient(rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0));
 }
 
-
 #nav-fluid > .navbar > .fas, .fa-cat:hover {
     transform:rotate(10deg);
 }
@@ -50,10 +44,8 @@ body {
 }
 
 #nav-fluid > .navbar > .container-fluid > h1 {
-    /* font-size: 1.8vmax; */
     font-weight: 400;
     font-family: 'Kumbh Sans', sans-serif;
-    /* why is this loading late? */
 }
 
 #nav-items li a {
@@ -65,7 +57,6 @@ body {
     transition: background-color 0.3s;
     border-radius: 10px;
 }
-
 
 #nav-items li a:hover {
     color: rgba(255,255,255);
@@ -150,10 +141,6 @@ div > .btn-primary, .btn-primary:visited > .submit-button {
     width: 100%;
     height: auto;
 }
-/* when i add an anchor, this might have to target the anchor not the img */
-
-/* #gallery > div > div > div > #gallery-carousel > ul > li {
-} */
 
 .gallery-carousel-inner {
     width: 100vw;
@@ -195,7 +182,6 @@ footer a {
 }
 
 #facebook a:hover {
-    /* color: lightskyblue; */
     color: royalblue;
 }
 
@@ -253,22 +239,9 @@ footer .social-icons {
         min-height: 60px;
     }
 
-
     #nav-fluid > nav > div > h1 > a {
         font-size: 1.4rem;
     }
-
-    /* #nav-fluid .navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    } */
-
-    /* #nav-fluid .navbar-brand{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    } */
-
-
 
     #booking-fluid {
         position: relative;
@@ -280,7 +253,6 @@ footer .social-icons {
         padding-bottom: 0;
       }
 
-    /* LOOK INTO THIS! */
     .divider {
         display: block;
     }
@@ -297,11 +269,6 @@ footer .social-icons {
     #gallery {
         margin: 1em 0;
     }
-}
-
-@media only screen and (max-width : 768px) {
-/* Up to iPad */
-/* LOOK ABOVE, THERE IS ANOTHR 768 */
 
     footer .footer-text {
         order: 2;
@@ -316,13 +283,11 @@ footer .social-icons {
     }
 
     footer .fab {
-        /* font-size: 4vmin; */
         font-size: 1.2em;
     }
 }
 
 @media only screen and (max-width : 375px) {
-/* Up to iPhone X */
     footer .fab {
         font-size: 2em;
     }

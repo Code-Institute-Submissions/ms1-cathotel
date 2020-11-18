@@ -257,6 +257,7 @@ Below are examples of how it looked vs the end product:
 * Bootstrap Documentation
 * W3 Schools Documentation for HTML & CSS
 * Carousel Source Code [here](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp)
+* Adding dark gradient filter on hero carousel image [here](https://stackoverflow.com/questions/44463690/darkening-a-background-image-on-a-bootstrap-carousel/44463901#44463901)
 
 ### Code Institute Tutors/Slack
 * Miklos
