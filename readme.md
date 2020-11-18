@@ -78,9 +78,9 @@ The project is for a fictional cattery business based in South West England. The
   * When in mobile view, a 'book' nav item appears for easy booking.
   * Smooth-scrolling enabled (browser-compatability limited)
   * Responsive 2 column grid detailing pricing and terms that stacks vertically when resized to a smaller screen size.
-* Responsive grid of publications the cattery has been featured in to provide a sense of legitmacy and popularity to the business.
+* Responsive grid of publications the cattery has been featured in to provide a sense of legitimacy and popularity to the business.
 * Selected testimonial with link to source for customer verification
-* Compact about section with accompanying photographs showcasing the incredible surrounding garden.
+* Descriptive 'About' section with accompanying photographs showcasing the incredible surrounding garden.
   * Photos in about section turn into a carousel for a better mobile experience.
 * Responsive grid of products that business is partnered with to provide potential customers the knowledge of what products are used while the cat is in care.
   * This also helps the customer understand the quality of the experience, that good well-known food brands are used.
